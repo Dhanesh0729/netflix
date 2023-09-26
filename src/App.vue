@@ -19,6 +19,7 @@ const useMovie = useMovieStore()
 const { movie, showFullVideo } = storeToRefs(useMovie)
 
 let video = ref(null)
+let test = null
 
 onMounted(() => {
   setTimeout(() => movie.value = movies[0][0], 100)
